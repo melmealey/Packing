@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Textarea element</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="./public/travel.png" alt="travel destinations" id="logo">
+      <hr>
+      <form action="submission.html" method="POST">
+        <h1>Let's Pack!</h1>
+					<section class="protein">
+          <label for="patty">What type of vacation will you be packing for?</label>
+    			<input type="text" name="patty" id="patty">
+        </section>
+        <hr>
+        <section class="patties">
+          <label for="amount">How many nights will you be traveling?</label>
+          <input type="number" name="amount" id="amount">
+        </section>
+        <hr>
+        <section class="cooked">
+          <label for="doneness">What is your budget?</label>
+          <br>
+          <span>$500</span>
+          <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+          <span>$2000</span>
+        </section>
+        <hr>
+        <section class="toppings">
+          <span>Packing suggestions</span>
+          <br>
+          <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+          <label for="lettuce">Tops</label>
+          <input type="checkbox" name="topping" id="tomato" value="tomato">
+          <label for="tomato">Bottoms</label>
+          <input type="checkbox" name="topping" id="onion" value="onion">
+          <label for="onion">Swimsuit</label>
+        </section>
+        <hr>
+        <section class="transportation">
+          <span>Would you like to fly or drive?</span>
+          <br>
+          <input type="radio" name="cheese" id="yes" value="yes">
+          <label for="yes">Fly</label>
+          <input type="radio" name="cheese" id="no" value="no">
+          <label for="no">Drive</label>
+        </section>
+        <hr>
+       
+        <section class="payment">
+          <label for="sauce">How would you like to pay?</label>
+          <input list="sauces" id="sauce" name="sauce">
+          <datalist id="sauces">
+            <option value="Amex"></option>
+            <option value="Visa"></option>
+            <option value="MasterCard"></option>
+            <option value="SkyMiles"></option>
+          </datalist>
+        </section>
+        
+        <hr>
+        <section class="extra-info">
+          <label for="extra">Anything else you want to add?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+        <hr>
+
+        <section class="submission">
+         <input type="submit" value="Submit">
+          
+        </section>
+        
+      </form>
+    </section>
+  </body>
+</html>
